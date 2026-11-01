@@ -27,10 +27,12 @@ Pick the one that matches where you use Claude. You only need one.
 ### claude.ai and the Claude desktop app (most people)
 
 1. Download this repo: click **Code → Download ZIP** above, and unzip it.
-2. Inside, find the folder `skills/first-principles-tutor`. Zip **just that folder**.
-3. In Claude, go to **Settings → Capabilities → Skills**, click **Upload skill**, and choose your zip.
+2. Inside, find the folder `skills/first-principles-tutor`. Zip **just that folder**, so the zip contains the `first-principles-tutor` folder at its top level.
+3. In Claude, go to **Settings → Capabilities** and turn on **Code execution and file creation** (called **Create and edit files** in the newer settings layout). Skills need it.
+4. Go to **Customize → Skills**, click **+**, then **+ Create skill → Upload a skill**, and choose your zip.
+5. Make sure the skill is toggled on.
 
-Skills are on paid plans. If you don't see the Skills section, turn on **Code execution and file creation** in the same settings page first.
+Skills work on Free, Pro, Max, Ultra, Team and Enterprise plans. On Team and Enterprise, an owner has to allow skills and code execution in Organization settings. See Anthropic's guide: [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ### Claude Code (terminal) — as a plugin
 

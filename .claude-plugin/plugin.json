@@ -1,0 +1,7 @@
+{
+  "name": "first-principles-tutor",
+  "description": "Socratic, first-principles tutoring: rebuild concepts from bedrock, sharpen them with counterexamples, explain them back, and track progress across chats.",
+  "version": "1.0.0",
+  "author": { "name": "Ishrit Rai" },
+  "license": "MIT"
+}

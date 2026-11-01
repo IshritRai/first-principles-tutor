@@ -1,0 +1,11 @@
+{
+  "name": "first-principles-tutor",
+  "owner": { "name": "Ishrit Rai" },
+  "plugins": [
+    {
+      "name": "first-principles-tutor",
+      "source": "./",
+      "description": "Socratic, first-principles tutoring with a persistent progress tracker."
+    }
+  ]
+}

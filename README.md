@@ -2,6 +2,8 @@
 
 A Claude skill for deep, effortful learning. Instead of explaining a concept, Claude makes you rebuild it yourself, then checks that the rebuild holds.
 
+Works in **claude.ai** (web and mobile), the **Claude desktop app**, and **Claude Code**.
+
 It combines five techniques into one loop:
 
 | Technique | What it does in the loop |
@@ -20,20 +22,26 @@ Every session also:
 
 ## Install
 
-### Claude Code (as a plugin)
+Pick the one that matches where you use Claude. You only need one.
+
+### claude.ai and the Claude desktop app (most people)
+
+1. Download this repo: click **Code → Download ZIP** above, and unzip it.
+2. Inside, find the folder `skills/first-principles-tutor`. Zip **just that folder**.
+3. In Claude, go to **Settings → Capabilities → Skills**, click **Upload skill**, and choose your zip.
+
+Skills are on paid plans. If you don't see the Skills section, turn on **Code execution and file creation** in the same settings page first.
+
+### Claude Code (terminal) — as a plugin
 
 ```
 /plugin marketplace add IshritRai/first-principles-tutor
 /plugin install first-principles-tutor@first-principles-tutor
 ```
 
-### Claude Code (as a plain skill)
+### Claude Code (terminal) — as a plain skill
 
 Copy `skills/first-principles-tutor/` into `~/.claude/skills/` (all projects) or `.claude/skills/` (one project).
-
-### claude.ai
-
-Zip the `skills/first-principles-tutor` folder and upload it under **Settings → Capabilities → Skills**.
 
 ## Use
 
@@ -47,7 +55,8 @@ The skill doesn't trigger for quick factual lookups.
 
 ## Notes
 
-- The progress tracker needs the Artifact tools (claude.ai or the Claude desktop app). Without them, the skill keeps a Markdown tracker in the chat instead.
+- The progress tracker page is a claude.ai artifact. Where artifacts aren't available, the skill keeps the same tracker as Markdown in the chat instead.
+- The `.claude-plugin/` folder is only for the Claude Code plugin install. claude.ai users can ignore it.
 - The method's sources are listed at the end of `SKILL.md`.
 
 ## License
